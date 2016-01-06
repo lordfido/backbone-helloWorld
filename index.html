@@ -1,0 +1,62 @@
+<html>
+  <head>
+    <title>Contact List</title>
+
+    <link rel="stylesheet" type="text/css" href="css/styles.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
+
+
+  </head>
+  <body>
+    <div id="contact-list" class="contact-list col-xs-12 col-sm-6 col-md-4">
+      <form id='newContact' novalidate>
+        <div class='row'>
+          <div class='col-xs-12'>
+            <br />
+
+            <div class='input-group'>
+              <span class='input-group-addon'>Full Name</span>
+              <input type='text' id='full-name' class='form-control' autofocus />
+            </div>
+            <br />
+
+            <div class='input-group'>
+              <span class='input-group-addon'>City</span>
+              <input type='text' id='city' class='form-control' />
+            </div>
+            <br />
+
+            <button type='button' id='new' class='btn btn-primary pull-right'>
+              <i class='glyphicon glyphicon-plus'></i>
+              <span> Add new contact</span>
+            </button>
+          </div>
+        </div>
+      </form>
+      <br />
+
+      <div class='row'>
+        <div class='col-xs-12'>
+          <ul class='list-group'></ul>
+        </div>
+      </div>
+    </div>
+    <div id="contact-details" class="contact-details col-xs-12 col-sm-6 col-md-8"></div>
+
+    <!-- Vendors -->
+    <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+    <script type="text/javascript" src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/json2/20150503/json2.min.js"></script>
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/underscore.js/1.8.3/underscore-min.js"></script>
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/backbone.js/1.2.3/backbone-min.js"></script>
+
+    <!-- App scripts -->
+    <script type="text/javascript" src="scripts/app.js"></script>
+    <script type="text/javascript" src="scripts/models/contact.js"></script>
+    <script type="text/javascript" src="scripts/collections/contact-list.js"></script>
+    <script type="text/javascript" src="scripts/views/contact-list-item.js"></script>
+    <script type="text/javascript" src="scripts/views/contact-list.js"></script>
+    <script type="text/javascript" src="scripts/views/contact-details.js"></script>
+
+  </body>
+</html>
