@@ -1,10 +1,70 @@
-<p>
-  <span id="details-fullName"></span>
-  <span id="details-city"></span>
-</p>
+<br />
+
+<h2>Contact Details</h2>
+
+<h3>Personal Info</h3>
+<div class="panel panel-default">
+  <ul class="list-group">
+    <li class="list-group-item">
+      <span class="list-group-item-heading">Full Name</span>
+      <div class="list-group-item-text">
+        <input type="text" id="details-fullName" class="form-control" />
+      </div>
+    </li>
+  </ul>
+</div>
+
+<h3>Contact info</h3>
+<div class="panel panel-default">
+  <ul class="list-group">
+    <li class="list-group-item">
+      <span class="list-group-item-heading">Email</span>
+      <div class="list-group-item-text">
+        <input type="email" id="details-email" class="form-control" />
+      </div>
+    </li>
+  </ul>
+  <ul class="list-group">
+    <li class="list-group-item">
+      <span class="list-group-item-heading">Phone number</span>
+      <div class="list-group-item-text">
+        <input type="phone" id="details-phone" class="form-control" />
+      </div>
+    </li>
+  </ul>
+</div>
+
+<h3>Postal info</h3>
+<div class="panel panel-default">
+  <ul class="list-group">
+    <li class="list-group-item">
+      <span class="list-group-item-heading">Address</span>
+      <div class="list-group-item-text">
+        <input type="text" id="details-address" class="form-control" />
+      </div>
+    </li>
+    <li class="list-group-item">
+      <span class="list-group-item-heading">City</span>
+      <div class="list-group-item-text">
+        <input type="text" id="details-city" class="form-control" />
+      </div>
+    </li>
+    <li class="list-group-item">
+      <span class="list-group-item-heading">State</span>
+      <div class="list-group-item-text">
+        <input type="text" id="details-state" class="form-control" />
+      </div>
+    </li>
+  </ul>
+</div>
+
+<div id="notifications"></div>
 
 <div class="pull-right">
-  <button type="button" class="btn btn-danger"><i class="glyphicon glyphicon-trash"></i> Delete</button>
-  <button type="button" class="btn btn-success"><i class="glyphicon glyphicon-ok"></i> Save</button>
-  <button type="button" class="btn btn-primary"><i class="glyphicon glyphicon-remove"></i> Close</button>
+  <button type="button" id="remove" class="btn btn-danger"><i class="glyphicon glyphicon-trash"></i> Remove</button>
+  <button type="button" id="save" class="btn btn-success"><i class="glyphicon glyphicon-ok"></i> Save</button>
+  <button type="button" id="close" class="btn btn-primary"><i class="glyphicon glyphicon-remove"></i> Close</button>
 </div>
+
+<div class="row"></div>
+<br />

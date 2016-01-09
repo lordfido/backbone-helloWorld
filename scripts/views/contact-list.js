@@ -40,6 +40,13 @@ var ContactListView = Backbone.View.extend({
       self.appendContact(contact);
     }, this);
 
+    if(this.contactList.length < 1){
+      $('.your-contacts-title', this.el).hide();
+    }
+    else{
+      $('.your-contacts-title', this.el).show();
+    }
+
     /* Enables bootstrap tooltips */
     $('[data-toggle="tooltip"]').tooltip();
   },
